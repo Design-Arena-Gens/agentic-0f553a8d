@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 248 250 252; /* slate-50 */
+  --fg: 15 23 42;    /* slate-900 */
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+.card {
+  @apply rounded-xl border border-slate-200 bg-white shadow-sm;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg px-3 py-2 text-sm font-medium transition-colors;
+}
+
+.btn-primary {
+  @apply bg-slate-900 text-white hover:bg-slate-800;
+}
+
+.btn-ghost {
+  @apply text-slate-700 hover:bg-slate-100;
+}
+
+.input {
+  @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm outline-none ring-slate-400 placeholder:text-slate-400 focus:ring-2;
+}
+
+.label {
+  @apply mb-1 block text-sm font-medium text-slate-700;
+}
+
